@@ -8,8 +8,6 @@
 </head>
 <body>
 
-<!-- Full Form Part -->
-
     <div class="container">
         <h2>Aion's Registration Form</h2>
         <p>Please register for $50 rewards</p>
@@ -27,20 +25,17 @@
             <input type="date" id="dob" name="dob" required>
 
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required pattern="[0-9]">
+            <input type="tel" id="phone" name="phone">
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
-<!-- Gender Part -->
 
             <label>Gender:</label>
             <div class="gender-options">
                 <label><input type="radio" name="gender" value="male" required> Male</label>
                 <label><input type="radio" name="gender" value="female" required> Female</label>
             </div>
-
-<!-- District Part   -->
 
           <label for="district">District:</label>
             <select id="district" name="district" required>
@@ -52,12 +47,10 @@
                 <option value="others">Others</option>
             </select>  
 
-<!-- Terms and Condition Part -->
             <label class="tearms">
                 <input type="checkbox" name="terms" required> I agree to the Terms and Conditions
             </label>
             
-<!-- Register Button Part -->
             <a href="#"><button type="submit">Register</button></a>
         </form>
     </div>
