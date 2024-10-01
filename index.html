@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Full Form Part -->
+
+    <div class="container">
+        <h2>Aion's Registration Form</h2>
+        <p>Please register for $50 rewards</p>
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+<!-- Gender Part -->
+
+            <label>Gender:</label>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+            </div>
+
+<!-- District Part   -->
+
+          <label for="district">District:</label>
+            <select id="district" name="district" required>
+                <option value="" disabled selected>Select your district</option>
+                <option value="dhaka">Dhaka</option>
+                <option value="narayanganj">Narayanganj</option>
+                <option value="chattogram">Chattogram</option>
+                <option value="sylhet">Sylhet</option>
+                <option value="others">Others</option>
+            </select>  
+
+<!-- Terms and Condition Part -->
+            <label class="tearms">
+                <input type="checkbox" name="terms" required> I agree to the Terms and Conditions
+            </label>
+            
+<!-- Register Button Part -->
+            <a href="#"><button type="submit">Register</button></a>
+        </form>
+    </div>
+
+</body>
+</html>
